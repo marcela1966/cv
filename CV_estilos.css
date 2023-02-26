@@ -1,0 +1,163 @@
+/* Hoja de estilos - proyecto CV  */
+* {
+	box-sizing: border-box;
+	padding:2px;
+}
+
+.profesion, .nombre, .mail
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-inline-start: 50px;
+    margin-block-start: 0;
+}
+
+.boton
+{
+	font-size: large;
+}
+
+#link1, #link2
+{
+	display: none;
+
+}
+
+h6
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: x-large;
+}
+
+img 
+{
+	width:120px;
+	height:120px;
+}
+body 
+{
+	justify-content: center;
+	background-color: rgba(36, 150, 160, 0.4); 
+	align-items: stretch;
+	width: 99%;
+}
+
+.header
+{
+    position:initial;
+	display: flex;
+    height: 160 ;
+    width: 99%;
+	padding: 18px;
+	background-color: darksalmon;
+}
+.resumen
+{
+	color: darkred;
+}
+
+.full {
+	width: 80%;
+	min-height: 100px;
+	margin: 0px;
+	display: flex;
+	padding: 10px;
+}
+.col-4_left {
+	position: initial; 
+	margin-left: 20px;
+	
+}
+.col-8_right {
+	position: initial; 
+	margin-left: 20px;
+	
+}
+
+
+.imagen, .Contact, .Habilidades, .Leng, .title,
+.resumen, .Experience, .Educacion, .proyectos 
+{
+	margin-bottom: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) 
+{
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .full 
+  {
+	display: block;
+	text-align: justify;
+  }
+  .titulo
+  {
+	display: block;
+  }
+  .profesion, .nombre
+  {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-inline-start: 2px;
+    margin-block-start: 0;
+  }
+  .resumen
+  {
+	background-color: rgba(247, 129, 4, 1);
+	color:black;
+	padding: 10px;
+  }
+  .mail
+  {
+	font-size: x-small;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-inline-start: 2px;
+    margin-block-start: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) 
+{
+   .profesion, .nombre
+  {  
+    font-size: x-large;
+  }
+   .imagen
+  {  
+	border-radius: 50%;
+	width:80px;
+	height:80px;
+  }
+   .header
+  {  
+	padding: 12px;
+  }
+  .titulo
+  {  
+	margin-left:28px;
+  }
+	img
+  {
+	width:110px;
+	height:110px;
+	border-radius: 2%;
+  }  
+}
